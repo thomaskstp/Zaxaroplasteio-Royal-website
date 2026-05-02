@@ -1,0 +1,51 @@
+/* RESET DAFAULT BROWSERS STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BRAND COLORS */
+:root {
+    --Cream: #F5EBDC; /* primary background */
+    --Burgundy: #5A2E2B;
+    --Orange: #E89644;
+    --Text-color: #333333;
+    --Chocolate-brown: #3B2418; /* script logo / body headings */
+    --Soft-ivory: #FBF6EE; /* card surfaces */
+}
+
+/* BASE STYLES */
+body {
+    background-color: var(--Cream);
+    font-family: 'Inter, sans-serif';
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 48px;
+  background-color: var(--cream);
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 32px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--Burgundy);
+    font-size: 12px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.nav-logo span {
+    font-size: 36px;
+    color: var(--Burgundy);
+    font-style: italic;
+}
