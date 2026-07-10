@@ -28,12 +28,34 @@ body {
 
 /* Navigation Bar */
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 48px;
-  background-color: var(--Cream);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 48px;
+    background-color: var(--Cream);
+    border-bottom: 1px solid rgba(90, 46, 43, 0.15);
 }
+
+
+/* EN | GR */
+.nav-lang {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    letter-spacing: 1.8px;
+    color: var(--Burgundy);
+}
+
+.lang-active {
+    color: var(--burgundy);
+    font-weight: 600;
+}
+
+.lang-divider {
+    opacity: 0.4;
+}
+
 
 .nav-left,
 .nav-right {
@@ -57,9 +79,11 @@ body {
 
 .hero {
     position: relative;
-    width: 100%;
-    height: 520px;
+    width: calc(100% - 48px);
+    margin: 0 24px;
+    height: 576px;
     overflow: hidden;
+    border-radius: 16px;
 }
 
 .hero-img {
@@ -72,19 +96,16 @@ body {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        to right,
-        rgba(74, 44, 42, 0.65) 0%,
-        rgba(74, 44, 42, 0.2) 55%,
-        transparent 100%
-    );
+    background: rgba(30, 15, 10, 0.55);
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0 80px;
 }
 
 .hero-text {
-    max-width: 420px;
+    max-width: 560px;
+    text-align: center;
 }
 
 .hero-eyebrow {
@@ -95,22 +116,32 @@ body {
     margin-bottom: 16px;
 }
 
+.hero-eyebrow {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--Cream);
+    opacity: 0.75;
+    margin-bottom: 16px;
+}
+
 .hero-h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 48px;
+    font-size: 52px;
     font-weight: 500;
-    letter-spacing: -0.01em;
     color: var(--Cream);
     line-height: 1.2;
     margin-bottom: 16px;
+    letter-spacing: -0.01em;
 }
 
 .hero-sub {
     font-size: 15px;
-    color: rgba(245, 239, 230, 0.85);
+    color: rgba(255, 255, 255, 0.85);
     line-height: 1.7;
     margin-bottom: 32px;
 }
+
 
 .hero-cta {
     display: inline-block;
@@ -123,7 +154,88 @@ body {
     text-decoration: none;
 }
 
-.hero-cta:hover {
+.hero-cta {
+    display: inline-block;
+    padding: 14px 40px;
     background-color: var(--Orange);
     color: var(--Cream);
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 100px;
+    border: none;
+}
+
+.hero-cta:hover {
+    background-color: var(--Burgundy);
+}
+
+/* Features Section */
+.features {
+    padding: 80px 48px;
+    background-color: var(--Cream);
+}
+
+.features-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.features-eyebrow {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--orange);
+    margin-bottom: 16px;
+}
+
+.features-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--chocolate);
+    letter-spacing: -0.01em;
+}
+
+/* Features — περισσότερο κενό */
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 64px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 24px 16px;
+}
+
+/* Καρδιές — μεγαλύτερες */
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    border: 1.5px solid var(--orange);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    font-size: 26px;
+    color: var(--orange);
+}
+
+.feature-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--orange);
+    margin-bottom: 12px;
+}
+
+.feature-text {
+    font-size: 13px;
+    color: var(--chocolate);
+    opacity: 0.75;
+    line-height: 1.7;
 }
