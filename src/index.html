@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Ζαχαροπλαστείο Royal — Fine artisanal pastries">Ζαχαροπλαστείο Royal — Fine artisanal pastries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon_white.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sticky header: logo centered via the 3-column .navbar grid,
+         nav links anchored to the outer edges with an even gap so the
+         whole row reads as one evenly measured strip (see style.css) -->
+    <header class="navbar" id="top">
+        <div class="nav-left">
+            <a href="products.html" data-en="Products">ΠΡΟΪΟΝΤΑ</a>
+            <a href="services.html" data-en="Services">ΥΠΗΡΕΣΙΕΣ</a>
+        </div>
+        <div class="nav-logo">
+            <!-- Two stacked logos: cream shows by default, orange fades
+                 in on hover/focus (see .nav-logo-hover in style.css) -->
+            <a href="index.html" aria-label="Royal home">
+                <img src="images/logo_cream_trans.png" alt="Royal Logo" height="86" width="150">
+                <img src="images/logo_orange_trans.png" alt="" class="nav-logo-hover" aria-hidden="true" height="86" width="150">
+            </a>
+        </div>
+        <div class="nav-right">
+            <a href="contact.html" data-en="Contact">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+            <a href="about.html" data-en="About us">ΣΧΕΤΙΚΑ</a>
+            <span class="nav-vdivider" aria-hidden="true"></span>
+            <!-- GR|EN toggle — see i18n.js for the swap logic -->
+            <div class="nav-lang" aria-label="Language selector">
+                <button type="button" class="lang-active" data-lang-btn="gr">GR</button>
+                <span class="lang-divider">|</span>
+                <button type="button" data-lang-btn="en">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero: full-bleed rounded image with bottom-anchored text
+             and a chocolate-to-transparent gradient for contrast -->
+        <section class="hero">
+            <div class="hero-frame">
+                <img src="images/hero_image.jpg" alt="Signature pastry" class="hero-img">
+                <div class="hero-overlay"></div>
+                <div class="hero-text">
+                    <p class="hero-eyebrow" data-en="Pâtisserie since 1985">Ζαχαροπλαστείο από το 1985</p>
+                    <h1 class="hero-h1" data-en="Fine, artisanal &amp; gourmet pastries">Λεπτές, χειροποίητες δημιουργίες</h1>
+                    <p class="hero-sub" data-en="Every dessert crafted with passion, premium ingredients and three generations of know-how.">Κάθε γλυκό φτιαγμένο με μεράκι, εκλεκτά υλικά και την τεχνογνωσία τριών γενεών.</p>
+                    <a href="products.html" class="hero-cta" data-en="Explore our products">ΔΕΙΤΕ ΤΑ ΠΡΟΪΟΝΤΑ ΜΑΣ</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pillars: 4 short value props, each with a burgundy heart icon -->
+        <section class="features">
+            <div class="features-header">
+                <p class="features-eyebrow">— ROYAL —</p>
+                <h2 class="features-title" data-en="Fine, artisanal &amp; gourmet pastries">Λεπτές, χειροποίητες δημιουργίες</h2>
+            </div>
+            <div class="features-container">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                    </div>
+                    <h3 class="feature-title" data-en="Quality ingredients">Εκλεκτά υλικά</h3>
+                    <p class="feature-text" data-en="Carefully selected to ensure impeccable taste and quality.">Επιλεγμένα προσεκτικά για άψογη γεύση και ποιότητα.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                    </div>
+                    <h3 class="feature-title" data-en="Seasonal creations">Εποχιακές δημιουργίες</h3>
+                    <p class="feature-text" data-en="Original recipes that change with the seasons.">Πρωτότυπες συνταγές που αλλάζουν με τις εποχές.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                    </div>
+                    <h3 class="feature-title" data-en="100% handcrafted">100% χειροποίητο</h3>
+                    <p class="feature-text" data-en="Everything is handmade daily in our workshop.">Τα πάντα παρασκευάζονται καθημερινά στο εργαστήριό μας.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                    </div>
+                    <h3 class="feature-title" data-en="Unique flavours">Μοναδικές γεύσεις</h3>
+                    <p class="feature-text" data-en="Traditional and modern creations with character.">Παραδοσιακές και μοντέρνες δημιουργίες με χαρακτήρα.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Favourites: a 3-item teaser for the full catalog on products.html -->
+        <section class="products" id="products">
+            <div class="products-header">
+                <p class="products-eyebrow">— SELECTION —</p>
+                <h2 class="products-title" data-en="Favourite products">ΑΓΑΠΗΜΕΝΑ ΠΡΟΪΟΝΤΑ</h2>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-media">
+                        <img src="images/favourite1.jpg" alt="Σοκολατένια Τούρτα" class="product-img">
+                    </div>
+                    <h3 class="product-name" data-en="Chocolate Cake">Σοκολατένια Τούρτα</h3>
+                    <p class="product-desc" data-en="Rich chocolate ganache, layered to perfection.">Πλούσια κρέμα σοκολάτας με γλάσο.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-media">
+                        <img src="images/favourite2.jpg" alt="Πανακότα με Φράουλα" class="product-img">
+                    </div>
+                    <h3 class="product-name" data-en="Strawberry Panna Cotta">Πανακότα με Φράουλα</h3>
+                    <p class="product-desc" data-en="Silky texture with fresh seasonal fruit.">Βελούδινη υφή με φρέσκα φρούτα.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-media">
+                        <img src="images/favourite3.jpg" alt="Macarons" class="product-img">
+                    </div>
+                    <h3 class="product-name">Macarons</h3>
+                    <p class="product-desc" data-en="Delicate French confections in seasonal flavours.">Λεπτεπίλεπτα γαλλικά γλυκίσματα.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story: dark chocolate band with the shop's history + gold script signature -->
+        <section class="story" id="about">
+            <div class="story-image">
+                <img src="images/history.JPG" alt="Our pastry workshop">
+            </div>
+            <div class="story-text">
+                <p class="story-eyebrow">— ROYAL PÂTISSERIE —</p>
+                <h2 class="story-title" data-en="Our story">Η ιστορία μας</h2>
+                <p class="story-body" data-en="Since 1985, Royal has been a landmark of fine pastry. Our traditional techniques meet contemporary aesthetics in every creation.">Από το 1985, το Royal αποτελεί σημείο αναφοράς για την υψηλή ζαχαροπλαστική. Οι παραδοσιακές μας τεχνικές συναντούν τη σύγχρονη αισθητική σε κάθε δημιουργία.</p>
+                <p class="story-signature">Royal</p>
+                <a href="about.html" class="story-cta" data-en="Learn more →">ΜΑΘΕΤΕ ΠΕΡΙΣΣΟΤΕΡΑ →</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shared footer: same markup/links on every page -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/logo_cream_trans.png" alt="Royal Logo" height="60">
+                <p class="footer-tagline" data-en="The fine art of pâtisserie">Λεπτή τέχνη ζαχαροπλαστικής</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <nav class="footer-nav">
+            <a href="products.html" data-en="Products">ΠΡΟΪΟΝΤΑ</a>
+            <a href="services.html" data-en="Services">ΥΠΗΡΕΣΙΕΣ</a>
+            <a href="about.html" data-en="About us">ΣΧΕΤΙΚΑ</a>
+            <a href="contact.html" data-en="Contact">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+        </nav>
+        <p class="footer-copy" data-en="© 2026 Royal Pâtisserie — All rights reserved.">© 2026 Ζαχαροπλαστείο Royal — Όλα τα δικαιώματα διατηρούνται.</p>
+    </footer>
+
+    <script src="i18n.js"></script>
+</body>
+</html>

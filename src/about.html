@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="About — Royal Pâtisserie">Σχετικά — Ζαχαροπλαστείο Royal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon_white.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar" id="top">
+        <div class="nav-left">
+            <a href="products.html" data-en="Products">ΠΡΟΪΟΝΤΑ</a>
+            <a href="services.html" data-en="Services">ΥΠΗΡΕΣΙΕΣ</a>
+        </div>
+        <div class="nav-logo">
+            <a href="index.html" aria-label="Royal home">
+                <img src="images/logo_cream_trans.png" alt="Royal Logo" height="86" width="150">
+                <img src="images/logo_orange_trans.png" alt="" class="nav-logo-hover" aria-hidden="true" height="86" width="150">
+            </a>
+        </div>
+        <div class="nav-right">
+            <a href="contact.html" data-en="Contact">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+            <a href="about.html" aria-current="page" data-en="About us">ΣΧΕΤΙΚΑ</a>
+            <span class="nav-vdivider" aria-hidden="true"></span>
+            <div class="nav-lang" aria-label="Language selector">
+                <button type="button" class="lang-active" data-lang-btn="gr">GR</button>
+                <span class="lang-divider">|</span>
+                <button type="button" data-lang-btn="en">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Storefront banner: same rounded-frame + bottom gradient
+             treatment as the homepage hero, text anchored bottom-left -->
+        <section class="about-hero">
+            <div class="about-hero-frame">
+                <img src="images/history.JPG" alt="Royal storefront">
+                <div class="about-hero-overlay"></div>
+                <div class="about-hero-text">
+                    <span class="about-hero-eyebrow">Est. 1985</span>
+                    <h1 class="about-hero-title" data-en="The Royal story">Η ιστορία του Royal</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lead paragraph (italic serif) + body copy, cream band -->
+        <section class="about-lead-band">
+            <div class="about-copy">
+                <p class="about-lead" data-en="Four decades of pastry craft. From our first shop to today, we remain faithful to one principle: the best dessert is the one made with time, patience and pure ingredients.">Τέσσερις δεκαετίες ζαχαροπλαστικής τέχνης. Από το πρώτο μας κατάστημα μέχρι σήμερα, παραμένουμε πιστοί σε μία αρχή: το καλύτερο γλυκό είναι αυτό που φτιάχνεται με χρόνο, υπομονή και αγνά υλικά.</p>
+                <div class="about-divider"></div>
+                <p class="about-body" data-en="Every creation passes through our pastry chef's hands. There are no shortcuts — only technique, dedication and respect for tradition.">Κάθε δημιουργία περνάει από τα χέρια του ζαχαροπλάστη μας. Δεν υπάρχουν συντομεύσεις — μόνο τεχνική, μεράκι και σεβασμός στην παράδοση.</p>
+            </div>
+        </section>
+
+        <!-- Burgundy pull-quote band with gold script signature -->
+        <section class="quote-band">
+            <p class="quote-text" data-en="&ldquo;A dessert is a small moment of joy. It deserves to be made right.&rdquo;">&ldquo;Το γλυκό είναι μια μικρή στιγμή χαράς. Αξίζει να φτιαχτεί σωστά.&rdquo;</p>
+            <p class="quote-signature">Royal</p>
+            <p class="quote-eyebrow" data-en="— Pâtisserie —">— Ζαχαροπλαστείο —</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/logo_cream_trans.png" alt="Royal Logo" height="60">
+                <p class="footer-tagline" data-en="The fine art of pâtisserie">Λεπτή τέχνη ζαχαροπλαστικής</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <nav class="footer-nav">
+            <a href="products.html" data-en="Products">ΠΡΟΪΟΝΤΑ</a>
+            <a href="services.html" data-en="Services">ΥΠΗΡΕΣΙΕΣ</a>
+            <a href="about.html" data-en="About us">ΣΧΕΤΙΚΑ</a>
+            <a href="contact.html" data-en="Contact">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+        </nav>
+        <p class="footer-copy" data-en="© 2026 Royal Pâtisserie — All rights reserved.">© 2026 Ζαχαροπλαστείο Royal — Όλα τα δικαιώματα διατηρούνται.</p>
+    </footer>
+
+    <script src="i18n.js"></script>
+</body>
+</html>

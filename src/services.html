@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Services — Royal Pâtisserie">Υπηρεσίες — Ζαχαροπλαστείο Royal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon_white.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar" id="top">
+        <div class="nav-left">
+            <a href="products.html" data-en="Products">ΠΡΟΪΟΝΤΑ</a>
+            <a href="services.html" aria-current="page" data-en="Services">ΥΠΗΡΕΣΙΕΣ</a>
+        </div>
+        <div class="nav-logo">
+            <a href="index.html" aria-label="Royal home">
+                <img src="images/logo_cream_trans.png" alt="Royal Logo" height="86" width="150">
+                <img src="images/logo_orange_trans.png" alt="" class="nav-logo-hover" aria-hidden="true" height="86" width="150">
+            </a>
+        </div>
+        <div class="nav-right">
+            <a href="contact.html" data-en="Contact">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+            <a href="about.html" data-en="About us">ΣΧΕΤΙΚΑ</a>
+            <span class="nav-vdivider" aria-hidden="true"></span>
+            <div class="nav-lang" aria-label="Language selector">
+                <button type="button" class="lang-active" data-lang-btn="gr">GR</button>
+                <span class="lang-divider">|</span>
+                <button type="button" data-lang-btn="en">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Cream title banner (matches the products page hero) -->
+        <section class="page-hero page-hero--cream">
+            <span class="page-hero-eyebrow">— Royal —</span>
+            <h1 class="page-hero-title" data-en="Services">Υπηρεσίες</h1>
+            <p class="page-hero-sub" data-en="From wedding cakes to catering for life's special moments.">Από γαμήλιες τούρτες μέχρι catering για ξεχωριστές στιγμές.</p>
+        </section>
+
+        <!-- 4 alternating full-width bands: orange-wash / chocolate,
+             image and text swap sides via .service-grid--reverse -->
+        <section class="service-band service-band--orange">
+            <div class="service-grid">
+                <div class="service-media">
+                    <img src="images/favourite1.jpg" alt="Γαμήλιες τούρτες">
+                </div>
+                <div>
+                    <span class="service-eyebrow">— 01 —</span>
+                    <h2 class="service-title" data-en="Wedding cakes">Γαμήλιες τούρτες</h2>
+                    <p class="service-desc" data-en="Bespoke wedding cake design and creation.">Σχεδιασμός και κατασκευή γαμήλιων τουρτών στα μέτρα σας.</p>
+                    <a href="contact.html" class="service-cta" data-en="Inquire →">Ζητήστε προσφορά →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-band service-band--chocolate">
+            <div class="service-grid service-grid--reverse">
+                <div class="service-media">
+                    <img src="images/favourite2.jpg" alt="Βαφτίσια &amp; Γιορτές">
+                </div>
+                <div>
+                    <span class="service-eyebrow">— 02 —</span>
+                    <h2 class="service-title" data-en="Christenings &amp; celebrations">Βαφτίσια &amp; Γιορτές</h2>
+                    <p class="service-desc" data-en="Creations that turn every celebration into a memory.">Δημιουργίες που μετατρέπουν κάθε γιορτή σε ανάμνηση.</p>
+                    <a href="contact.html" class="service-cta" data-en="Inquire →">Ζητήστε προσφορά →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-band service-band--orange">
+            <div class="service-grid">
+                <div class="service-media">
+                    <img src="images/favourite3.jpg" alt="Custom παραγγελίες">
+                </div>
+                <div>
+                    <span class="service-eyebrow">— 03 —</span>
+                    <h2 class="service-title" data-en="Custom orders">Custom παραγγελίες</h2>
+                    <p class="service-desc" data-en="Tell us your idea — we'll bring it to life.">Πείτε μας την ιδέα σας — εμείς θα τη φέρουμε στη ζωή.</p>
+                    <a href="contact.html" class="service-cta" data-en="Inquire →">Ζητήστε προσφορά →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-band service-band--chocolate">
+            <div class="service-grid service-grid--reverse">
+                <div class="service-media">
+                    <img src="images/panacota.jpg" alt="Catering εκδηλώσεων">
+                </div>
+                <div>
+                    <span class="service-eyebrow">— 04 —</span>
+                    <h2 class="service-title" data-en="Event catering">Catering εκδηλώσεων</h2>
+                    <p class="service-desc" data-en="Full dessert service for corporate and private events.">Πλήρης κάλυψη γλυκών για εταιρικές και ιδιωτικές εκδηλώσεις.</p>
+                    <a href="contact.html" class="service-cta" data-en="Inquire →">Ζητήστε προσφορά →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/logo_cream_trans.png" alt="Royal Logo" height="60">
+                <p class="footer-tagline" data-en="The fine art of pâtisserie">Λεπτή τέχνη ζαχαροπλαστικής</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <nav class="footer-nav">
+            <a href="products.html" data-en="Products">ΠΡΟΪΟΝΤΑ</a>
+            <a href="services.html" data-en="Services">ΥΠΗΡΕΣΙΕΣ</a>
+            <a href="about.html" data-en="About us">ΣΧΕΤΙΚΑ</a>
+            <a href="contact.html" data-en="Contact">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+        </nav>
+        <p class="footer-copy" data-en="© 2026 Royal Pâtisserie — All rights reserved.">© 2026 Ζαχαροπλαστείο Royal — Όλα τα δικαιώματα διατηρούνται.</p>
+    </footer>
+
+    <script src="i18n.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Contact — Royal Pâtisserie">Επικοινωνία — Ζαχαροπλαστείο Royal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon_white.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar" id="top">
+        <div class="nav-left">
+            <a href="products.html" data-en="Products">ΠΡΟΪΟΝΤΑ</a>
+            <a href="services.html" data-en="Services">ΥΠΗΡΕΣΙΕΣ</a>
+        </div>
+        <div class="nav-logo">
+            <a href="index.html" aria-label="Royal home">
+                <img src="images/logo_cream_trans.png" alt="Royal Logo" height="86" width="150">
+                <img src="images/logo_orange_trans.png" alt="" class="nav-logo-hover" aria-hidden="true" height="86" width="150">
+            </a>
+        </div>
+        <div class="nav-right">
+            <a href="contact.html" aria-current="page" data-en="Contact">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+            <a href="about.html" data-en="About us">ΣΧΕΤΙΚΑ</a>
+            <span class="nav-vdivider" aria-hidden="true"></span>
+            <div class="nav-lang" aria-label="Language selector">
+                <button type="button" class="lang-active" data-lang-btn="gr">GR</button>
+                <span class="lang-divider">|</span>
+                <button type="button" data-lang-btn="en">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero page-hero--cream">
+            <span class="page-hero-eyebrow">— Royal —</span>
+            <h1 class="page-hero-title" data-en="Get in touch">Επικοινωνία</h1>
+            <p class="page-hero-sub" data-en="We're here for any question or order.">Είμαστε εδώ για κάθε ερώτηση ή παραγγελία.</p>
+        </section>
+
+        <section class="contact-wrap">
+            <div class="contact-grid">
+                <!-- Info card: address / phone / email / hours + map -->
+                <div class="contact-info">
+                    <div class="info-row">
+                        <span class="info-icon" aria-hidden="true">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </span>
+                        <div>
+                            <div class="info-label" data-en="Address">Διεύθυνση</div>
+                            <div class="info-value">Βασ. Παύλου 178, Σπάτα</div>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-icon" aria-hidden="true">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92Z"/></svg>
+                        </span>
+                        <div>
+                            <div class="info-label" data-en="Phone">Τηλέφωνο</div>
+                            <div class="info-value">+30 210 663 4146</div>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-icon" aria-hidden="true">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+                        </span>
+                        <div>
+                            <div class="info-label">Email</div>
+                            <div class="info-value">info@royal-patisserie.gr</div>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-icon" aria-hidden="true">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </span>
+                        <div>
+                            <div class="info-label" data-en="Opening hours">Ώρες λειτουργίας</div>
+                            <div class="info-value" data-en="Mon – Sun: 09:00 – 22:00">Δευτ – Κυριακή: 09:00 – 22:00</div>
+                        </div>
+                    </div>
+                    <!-- Placeholder map — swap the bbox in the src for the real shop location -->
+                    <div class="contact-map">
+                        <iframe title="Χάρτης" src="https://www.openstreetmap.org/export/embed.html?bbox=23.71%2C37.96%2C23.76%2C38.00&amp;layer=mapnik" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <!-- Contact form — client-side only for now, see contact.js -->
+                <form class="contact-form" id="contact-form">
+                    <div class="form-field">
+                        <label for="name" data-en="Name">Όνομα</label>
+                        <input id="name" name="name" type="text" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required>
+                    </div>
+                    <div class="form-textarea-field">
+                        <label for="message" data-en="Message">Μήνυμα</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit" data-en="Send message">Αποστολή</button>
+                    <p class="form-success" id="form-success" hidden data-en="Thank you! We'll be in touch soon.">Σας ευχαριστούμε! Θα επικοινωνήσουμε σύντομα.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/logo_cream_trans.png" alt="Royal Logo" height="60">
+                <p class="footer-tagline" data-en="The fine art of pâtisserie">Λεπτή τέχνη ζαχαροπλαστικής</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <nav class="footer-nav">
+            <a href="products.html" data-en="Products">ΠΡΟΪΟΝΤΑ</a>
+            <a href="services.html" data-en="Services">ΥΠΗΡΕΣΙΕΣ</a>
+            <a href="about.html" data-en="About us">ΣΧΕΤΙΚΑ</a>
+            <a href="contact.html" data-en="Contact">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+        </nav>
+        <p class="footer-copy" data-en="© 2026 Royal Pâtisserie — All rights reserved.">© 2026 Ζαχαροπλαστείο Royal — Όλα τα δικαιώματα διατηρούνται.</p>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
