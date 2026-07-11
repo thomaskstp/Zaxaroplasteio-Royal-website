@@ -1,2 +1,3 @@
 # Zaxaroplasteio-Royal-website
-This is a website for a local pastrie shop.
+This is a website for a local pastry shop.
+
