@@ -1,0 +1,16 @@
+# SSH Keys - NEVER commit private keys
+*.pub
+*.pem
+*.key
+*id_rsa*
+*id_ed25519*
+.ssh/
+
+# Dependencies
+node_modules/
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
