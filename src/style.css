@@ -1233,3 +1233,124 @@ a {
         padding: 32px 24px;
     }
 }
+
+/* ================================================================
+   ANIMATIONS — hero carousel, hero text pop-up, scroll reveals
+   Wired up by animations.js. All motion is gated behind
+   prefers-reduced-motion at the bottom of this block.
+   ================================================================ */
+
+/* ---------- Hero carousel ---------- */
+/* Five images stacked in the same box; only the .is-active one is
+   opaque, so advancing the class crossfades between photos. */
+.hero-carousel {
+    position: absolute;
+    inset: 0;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+    will-change: opacity;
+}
+
+.hero-slide.is-active {
+    opacity: 1;
+}
+
+/* Dot controls — appended to .hero-frame by animations.js */
+.hero-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 22px;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero-dot {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: oklch(0.925 0.035 80 / 0.45);
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.hero-dot:hover {
+    background: oklch(0.925 0.035 80 / 0.75);
+}
+
+.hero-dot.is-active {
+    background: var(--gold);
+    transform: scale(1.3);
+}
+
+/* ---------- Hero text: staggered pop-up on page load ---------- */
+/* Mirrors the Lovable reference's fade-up: each line lifts 16px and
+   fades in, one after another, as soon as the page is loaded. */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-eyebrow,
+.hero-h1,
+.hero-sub,
+.hero-cta {
+    opacity: 0;
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+.hero-eyebrow { animation-delay: 0.15s; }
+.hero-h1      { animation-delay: 0.30s; }
+.hero-sub     { animation-delay: 0.45s; }
+.hero-cta     { animation-delay: 0.60s; }
+
+/* ---------- Scroll reveal ---------- */
+/* animations.js adds .reveal (hiding the element) only when JS is
+   available, then .is-visible once it scrolls into view. Without JS
+   the element keeps its normal, fully-visible styling. */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------- Respect reduced-motion preferences ---------- */
+@media (prefers-reduced-motion: reduce) {
+    .hero-slide {
+        transition: none;
+    }
+
+    .hero-eyebrow,
+    .hero-h1,
+    .hero-sub,
+    .hero-cta {
+        animation: none;
+        opacity: 1;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

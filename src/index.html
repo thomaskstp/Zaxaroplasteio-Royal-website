@@ -45,7 +45,15 @@
              and a chocolate-to-transparent gradient for contrast -->
         <section class="hero">
             <div class="hero-frame">
-                <img src="images/hero_image.jpg" alt="Signature pastry" class="hero-img">
+                <!-- Crossfade carousel: 5 slides auto-advance; dots are
+                     built by animations.js. First slide starts active. -->
+                <div class="hero-carousel" role="group" aria-roledescription="carousel" aria-label="Royal pastries">
+                    <img src="images/carousel1.jpg" alt="Signature pastry" class="hero-img hero-slide is-active">
+                    <img src="images/carousel2.jpg" alt="" aria-hidden="true" class="hero-img hero-slide">
+                    <img src="images/carousel3.jpg" alt="" aria-hidden="true" class="hero-img hero-slide">
+                    <img src="images/carousel4.jpg" alt="" aria-hidden="true" class="hero-img hero-slide">
+                    <img src="images/carousel5.jpg" alt="" aria-hidden="true" class="hero-img hero-slide">
+                </div>
                 <div class="hero-overlay"></div>
                 <div class="hero-text">
                     <p class="hero-eyebrow" data-en="Pâtisserie since 1985">Ζαχαροπλαστείο από το 1985</p>
@@ -173,5 +181,6 @@
     </footer>
 
     <script src="i18n.js"></script>
+    <script src="animations.js"></script>
 </body>
 </html>
