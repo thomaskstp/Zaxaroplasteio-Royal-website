@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ssh -T git@github.com)",
+      "Bash(ssh-keyscan -H github.com)",
+      "Read(//c/Users/Θωμάς/.ssh/**)",
+      "Bash(ssh -vT git@github.com)",
+      "Bash(grep -v github.com ~/.ssh/known_hosts)",
+      "Bash(mv ~/.ssh/known_hosts.tmp ~/.ssh/known_hosts)",
+      "Bash(ssh-keyscan -t rsa,ecdsa,ed25519 github.com)",
+      "Bash(ssh -vvv git@github.com)",
+      "Bash(ssh -V)",
+      "Read(//etc/**)",
+      "Bash(\n# Ελέγχει το SSH config\necho \"=== SSH config ===\"\ncat ~/.ssh/config\n\necho -e \"\\\\n=== Checking HOME variable ===\"\necho $HOME\n\necho -e \"\\\\n=== Checking current directory ===\"\npwd\n)",
+      "Bash(# Δημιούργησε *)"
+    ]
+  }
+}
