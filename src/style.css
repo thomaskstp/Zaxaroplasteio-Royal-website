@@ -922,7 +922,60 @@ a {
     color: oklch(0.19 0.032 40 / 0.75);
 }
 
-/* ---------- About page: burgundy pull-quote band ---------- */
+/* ---------- About page: philosophy pillars ---------- */
+/* Three numbered values (from the photo reference), rendered in the
+   project's own tokens — Cormorant serif, orange numbers, burgundy
+   titles — sitting on the same cream band as the lead copy above. */
+.about-philosophy {
+    max-width: 1100px;
+    margin: 88px auto 0;
+}
+
+.about-philosophy-eyebrow {
+    text-align: center;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--orange-warm);
+    margin-bottom: 56px;
+}
+
+.about-values {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 56px;
+}
+
+/* Thin top rule above each column, echoing the reference layout */
+.value-item {
+    padding-top: 28px;
+    border-top: 1px solid oklch(0.35 0.095 28 / 0.25);
+}
+
+.value-num {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--orange-warm);
+}
+
+.value-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--burgundy);
+    margin: 14px 0;
+}
+
+.value-text {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: oklch(0.19 0.032 40 / 0.75);
+}
+
+/* ---------- About page: orange pull-quote band ---------- */
 .quote-band {
     background-color: var(--burgundy);
     background-image:

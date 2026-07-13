@@ -114,6 +114,8 @@
             [".service-media", 0],
             [".service-title", 90],
             [".about-copy", 0],
+            [".about-philosophy-eyebrow", 0],
+            [".value-item", 110],
             [".quote-text", 0],
             [".quote-signature", 120],
             [".contact-info", 0],
