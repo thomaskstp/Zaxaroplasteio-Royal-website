@@ -975,38 +975,31 @@ a {
     color: oklch(0.19 0.032 40 / 0.75);
 }
 
-/* ---------- About page: orange pull-quote band ---------- */
-.quote-band {
-    background-color: var(--burgundy);
-    background-image:
-        radial-gradient(ellipse 60% 80% at 100% 0%, oklch(0.66 0.155 48 / 0.35), transparent 60%),
-        radial-gradient(ellipse 50% 70% at 0% 100%, oklch(0.19 0.032 40 / 0.5), transparent 60%);
-    color: var(--cream);
+/* ---------- About page: orange-framed pull quote ---------- */
+/* The quote used to sit in its own full-width burgundy band below the
+   page; it now lives inline with the lead copy, inside an orange frame. */
+.about-quote {
+    margin: 48px auto 0;
+    padding: 40px 44px;
+    border: 2px solid var(--orange-warm);
+    border-radius: 1rem;
+    background: oklch(0.66 0.155 48 / 0.07);
     text-align: center;
-    padding: 112px 24px;
 }
 
-.quote-text {
-    max-width: 44rem;
-    margin: 0 auto;
+.about-quote-text {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
-    font-size: clamp(1.6rem, 3.6vw, 2.6rem);
-    line-height: 1.4;
+    font-size: clamp(1.25rem, 2.6vw, 1.8rem);
+    line-height: 1.45;
+    color: var(--burgundy);
 }
 
-.quote-signature {
-    margin-top: 32px;
-    font-family: 'Allura', cursive;
-    font-size: 3rem;
-    color: var(--gold);
-}
-
-.quote-eyebrow {
+.about-quote-signature {
     margin-top: 16px;
-    font-size: 0.7rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
+    font-family: 'Allura', cursive;
+    font-size: 2.4rem;
+    line-height: 1;
     color: var(--orange-warm);
 }
 
@@ -1273,9 +1266,12 @@ a {
         max-width: calc(100% - 40px);
     }
 
-    .about-lead-band,
-    .quote-band {
+    .about-lead-band {
         padding: 72px 20px;
+    }
+
+    .about-quote {
+        padding: 32px 24px;
     }
 
     .contact-wrap {

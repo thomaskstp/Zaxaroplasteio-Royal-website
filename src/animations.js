@@ -116,8 +116,7 @@
             [".about-copy", 0],
             [".about-philosophy-eyebrow", 0],
             [".value-item", 110],
-            [".quote-text", 0],
-            [".quote-signature", 120],
+            [".about-quote", 0],
             [".contact-info", 0],
             [".contact-form", 120]
         ];
