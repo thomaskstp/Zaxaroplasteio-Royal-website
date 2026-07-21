@@ -208,6 +208,44 @@ a {
     background: oklch(0.755 0.135 62 / 0.3);
 }
 
+/* Hamburger button — three cream dashes. Hidden on desktop/tablet;
+   the ≤780px block below reveals it and turns the nav into a dropdown.
+   Bars morph into an X while the menu is open (.navbar.is-open). */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin: 0 auto;
+    border-radius: 2px;
+    background: oklch(0.925 0.035 80 / 0.85);   /* same cream as nav links */
+    transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.navbar.is-open .nav-toggle span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.navbar.is-open .nav-toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar.is-open .nav-toggle span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
 /* ---------- Hero ---------- */
 .hero {
     padding: 40px 24px 0;
@@ -1190,20 +1228,27 @@ a {
     }
 }
 
-@media (max-width: 780px) {
+/* The classic horizontal navbar needs ~1000px to fit all links + logo +
+   GR|EN toggle, so it collapses to the hamburger for tablets too, not just
+   phones. The rest of the phone-only layout stays at ≤780px below. */
+@media (max-width: 1040px) {
+    /* Phone/tablet navbar: logo + hamburger share the top row (switch from
+       the desktop 3-column grid to flex so the rest can wrap below). The nav
+       links and GR|EN toggle drop into a full-width menu that only shows
+       once the hamburger is tapped — same chocolate bar, same cream links
+       and fonts as the desktop navbar. */
     .navbar {
-        grid-template-columns: 1fr auto;
-        gap: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0;
         min-height: auto;
-        padding: 16px 18px;
-    }
-
-    .nav-left,
-    .nav-right {
-        display: none;
+        padding: 14px 18px;
     }
 
     .nav-logo {
+        order: 1;
         justify-content: flex-start;
     }
 
@@ -1211,6 +1256,54 @@ a {
         height: 60px;
     }
 
+    .nav-toggle {
+        display: flex;
+        order: 2;
+    }
+
+    /* Links + language toggle: hidden until the menu is open, then each
+       spans the full width and stacks vertically as a dropdown. */
+    .nav-left,
+    .nav-right {
+        order: 3;
+        flex-basis: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2px;
+        display: none;
+    }
+
+    .navbar.is-open .nav-left,
+    .navbar.is-open .nav-right {
+        display: flex;
+    }
+
+    /* Hairline above the first dropped row sets the menu off from the bar */
+    .navbar.is-open .nav-left {
+        margin-top: 12px;
+        padding-top: 12px;
+        border-top: 1px solid oklch(0.755 0.135 62 / 0.2);
+    }
+
+    .nav-left a,
+    .nav-right a {
+        display: block;
+        width: 100%;
+        padding: 12px 16px;
+    }
+
+    .nav-vdivider {
+        display: none;
+    }
+
+    .nav-lang {
+        justify-content: flex-start;
+        padding: 12px 16px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 780px) {
     .hero {
         padding-inline: 12px;
     }

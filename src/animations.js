@@ -154,6 +154,46 @@
         });
     }
 
+    /* ============================================================
+       3. Mobile nav (hamburger)
+       On phones the navbar collapses behind a three-dash button
+       (see .nav-toggle / .navbar.is-open in style.css). Toggling
+       .is-open reveals the existing nav links + GR|EN toggle as a
+       dropdown; tapping any link closes it again. Purely additive —
+       on wider screens the button is hidden and the links show as
+       usual, so this stays a progressive enhancement.
+       ============================================================ */
+    function initNavToggle() {
+        var navbar = document.querySelector(".navbar");
+        var toggle = navbar && navbar.querySelector(".nav-toggle");
+        if (!toggle) return;
+
+        function setOpen(open) {
+            navbar.classList.toggle("is-open", open);
+            toggle.setAttribute("aria-expanded", open ? "true" : "false");
+        }
+
+        toggle.addEventListener("click", function () {
+            setOpen(!navbar.classList.contains("is-open"));
+        });
+
+        // Close after following a link (but not when using the GR|EN
+        // language buttons, so the menu stays open to show the swap).
+        navbar
+            .querySelectorAll(".nav-left a, .nav-right a")
+            .forEach(function (link) {
+                link.addEventListener("click", function () {
+                    setOpen(false);
+                });
+            });
+
+        // Close on Escape for keyboard users.
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") setOpen(false);
+        });
+    }
+
     initCarousel();
     initReveal();
+    initNavToggle();
 })();
