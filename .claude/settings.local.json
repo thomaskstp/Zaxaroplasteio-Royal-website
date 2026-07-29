@@ -12,7 +12,10 @@
       "Bash(ssh -V)",
       "Read(//etc/**)",
       "Bash(\n# Ελέγχει το SSH config\necho \"=== SSH config ===\"\ncat ~/.ssh/config\n\necho -e \"\\\\n=== Checking HOME variable ===\"\necho $HOME\n\necho -e \"\\\\n=== Checking current directory ===\"\npwd\n)",
-      "Bash(# Δημιούργησε *)"
+      "Bash(# Δημιούργησε *)",
+      "Bash(wsl.exe -- bash -lc 'echo \"convert:\"; command -v convert; echo \"cwebp:\"; command -v cwebp; echo \"heif-convert:\"; command -v heif-convert; echo \"apt:\"; command -v apt')",
+      "Bash(/c/msys64/ucrt64/bin/python.exe -m ensurepip --version)",
+      "Bash(/c/msys64/ucrt64/bin/python.exe -c 'import urllib.request; print\\(urllib.request.urlopen\\('\\\\''https://pypi.org'\\\\'', timeout=5\\).status\\)')"
     ]
   }
 }

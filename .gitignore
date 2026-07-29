@@ -14,3 +14,9 @@ node_modules/
 # OS
 .DS_Store
 Thumbs.db
+
+# Raw/original photos — optimize-images.sh turns these into the
+# .jpg/.webp pairs that actually ship, in src/images/. Keep the
+# originals local only; don't bloat the repo with them.
+rawPhotos/*
+!rawPhotos/*.sh
