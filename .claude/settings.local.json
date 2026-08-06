@@ -15,7 +15,8 @@
       "Bash(# Δημιούργησε *)",
       "Bash(wsl.exe -- bash -lc 'echo \"convert:\"; command -v convert; echo \"cwebp:\"; command -v cwebp; echo \"heif-convert:\"; command -v heif-convert; echo \"apt:\"; command -v apt')",
       "Bash(/c/msys64/ucrt64/bin/python.exe -m ensurepip --version)",
-      "Bash(/c/msys64/ucrt64/bin/python.exe -c 'import urllib.request; print\\(urllib.request.urlopen\\('\\\\''https://pypi.org'\\\\'', timeout=5\\).status\\)')"
+      "Bash(/c/msys64/ucrt64/bin/python.exe -c 'import urllib.request; print\\(urllib.request.urlopen\\('\\\\''https://pypi.org'\\\\'', timeout=5\\).status\\)')",
+      "Bash(\"C:/msys64/ucrt64/bin/python.exe\" -m http.server 8099 --bind 127.0.0.1)"
     ]
   }
 }
