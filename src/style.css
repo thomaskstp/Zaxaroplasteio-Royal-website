@@ -1180,7 +1180,7 @@ a {
     background: var(--gold);
 }
 
-/* Revealed by contact.js after the (client-only) form "send" */
+/* Revealed by contact.js once Formspree confirms the submit */
 .form-success {
     text-align: center;
     font-size: 0.9rem;
@@ -1188,7 +1188,16 @@ a {
     color: var(--orange-warm);
 }
 
-.form-success[hidden] {
+/* Revealed by contact.js if the Formspree submit fails */
+.form-error {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #b3261e;
+}
+
+.form-success[hidden],
+.form-error[hidden] {
     display: none;
 }
 

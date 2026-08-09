@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-en="Products — Royal Pâtisserie">Προϊόντα — Ζαχαροπλαστείο Royal</title>
+    <meta name="description" content="Δείτε όλη τη συλλογή του Royal: χειροποίητες τούρτες, παγωτά, γλυκά, σιροπιαστά και εποχικές δημιουργίες.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Προϊόντα — Ζαχαροπλαστείο Royal">
+    <meta property="og:description" content="Χειροποίητες τούρτες, παγωτά, γλυκά, σιροπιαστά και εποχικές δημιουργίες.">
+    <meta property="og:image" content="https://zaxaroplasteioroyal.gr/images/IMG_3083.jpg">
+    <meta property="og:url" content="https://zaxaroplasteioroyal.gr/products.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://zaxaroplasteioroyal.gr/products.html">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/favicon_white.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,371 +75,409 @@
              homepage carousel and the "favourites" teaser (see CLAUDE.md) -->
         <section class="catalog">
             <div class="catalog-grid">
-                <!-- ---------- Τούρτες ---------- -->
+                <!-- Curated order: first 9 pinned per owner's layout spec (products.html §2),
+                     then cakes/ice cream/pastries interleaved with a few syrup pieces mixed in,
+                     seasonal items last. See CLAUDE.md for the source instructions. -->
+                <div class="product-card" data-cat="pastries">
+                    <div class="product-media">
+                        <img src="images/cookiesPasta.jpg" alt="Ατομική πάστα Royal με γκανάς και μπισκότο" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Cookies Pastry">Πάστα Cookies</h3>
+                    <p class="product-desc" data-en="Cookie mousse with a rich biscuit base and chocolate glaze.">Μους cookies με πλούσιο μπισκότο και γλασάρισμα σοκολάτας.</p>
+                </div>
+                <div class="product-card" data-cat="icecream">
+                    <div class="product-media">
+                        <img src="images/IMG_3247.jpg" alt="Βιτρίνα με χειροποίητα παγωτά" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Ice Cream Counter">Βιτρίνα Παγωτού</h3>
+                    <p class="product-desc" data-en="Handmade ice cream in 30 flavours that change daily.">Χειροποίητο παγωτό σε 30 γεύσεις που αλλάζουν καθημερινά.</p>
+                </div>
                 <div class="product-card" data-cat="cakes">
                     <div class="product-media">
-                        <img src="images/IMG_3083.jpg" alt="Τούρτα μους σοκολάτας με φράουλες" class="product-img">
+                        <img src="images/IMG_3083.jpg" alt="Τούρτα μους σοκολάτας με φράουλες" class="product-img" loading="lazy">
                     </div>
                     <h3 class="product-name" data-en="Chocolate Cake">Τούρτα Σοκολάτας</h3>
                     <p class="product-desc" data-en="Chocolate mousse under a mirror ganache, finished with fresh strawberries.">Μους σοκολάτας με γκανάς καθρέφτη και φρέσκιες φράουλες.</p>
                 </div>
+                <div class="product-card" data-cat="pastries">
+                    <div class="product-media">
+                        <img src="images/IMG_2738.jpg" alt="Εκλέρ με επικάλυψη σοκολάτας" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Chocolate Éclair">Εκλέρ Σοκολάτας</h3>
+                    <p class="product-desc" data-en="Choux filled with vanilla cream, glazed in milk chocolate.">Πατ σου με κρέμα βανίλιας και επικάλυψη σοκολάτας γάλακτος.</p>
+                </div>
+                <div class="product-card" data-cat="icecream">
+                    <div class="product-media">
+                        <img src="images/IMG_3958.jpg" alt="Παγωτό ΙΟΝ αμυγδάλου" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Almond Ice Cream">Παγωτό ΙΟΝ Αμυγδάλου</h3>
+                    <p class="product-desc" data-en="Ice cream with melted ION couverture and roasted almonds.">Παγωτό με λιωμένη κουβερτούρα ΙΟΝ και καβουρδισμένα αμύγδαλα.</p>
+                </div>
+                <div class="product-card" data-cat="pastries">
+                    <div class="product-media">
+                        <img src="images/IMG_2597.jpg" alt="Ατομικές ταρτάκια με κρέμα φουντουκιού Bueno" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Bueno Tartlets">Ταρτάκια Bueno</h3>
+                    <p class="product-desc" data-en="Individual tartlets with Bueno hazelnut cream on a crisp base.">Ατομικές ταρτάκια με κρέμα φουντουκιού Bueno και τραγανή βάση.</p>
+                </div>
                 <div class="product-card" data-cat="cakes">
                     <div class="product-media">
-                        <img src="images/IMG_3045.jpg" alt="Τούρτα βανίλια Μαδαγασκάρης" class="product-img">
+                        <img src="images/pao_cake.jpg" alt="Τούρτα ποδοσφαίρου ΠΑΟ με μπάλες ζαχαρόπαστας" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="PAO Football Cake">Τούρτα ΠΑΟ</h3>
+                    <p class="product-desc" data-en="Football-shaped cake with the team crest and hand-made fondant balls.">Τούρτα σε σχήμα μπάλας ποδοσφαίρου, με λογότυπο ομάδας και χειροποίητες μπάλες ζαχαρόπαστας.</p>
+                </div>
+                <div class="product-card" data-cat="pastries">
+                    <div class="product-media">
+                        <img src="images/IMG_2576.jpg" alt="Ατομική πάστα Lotus" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Lotus Pastry">Πάστα Lotus</h3>
+                    <p class="product-desc" data-en="Lotus biscuit mousse on a crunchy speculoos base.">Μους μπισκότου Lotus σε τραγανή βάση από θρυμματισμένο μπισκότο.</p>
+                </div>
+                <div class="product-card" data-cat="cakes">
+                    <div class="product-media">
+                        <img src="images/IMG_3045.jpg" alt="Τούρτα βανίλια Μαδαγασκάρης" class="product-img" loading="lazy">
                     </div>
                     <h3 class="product-name" data-en="Madagascar Vanilla Cake">Τούρτα Βανίλια Μαδαγασκάρης</h3>
                     <p class="product-desc" data-en="Silky Madagascar vanilla cream under a smooth glaze.">Απαλή κρέμα βανίλιας Μαδαγασκάρης με βελούδινο γλάσο.</p>
                 </div>
                 <div class="product-card" data-cat="cakes">
                     <div class="product-media">
-                        <img src="images/IMG_2889.jpg" alt="Τούρτα Ferrero Rocher" class="product-img">
+                        <img src="images/IMG_2889.jpg" alt="Τούρτα Ferrero Rocher" class="product-img" loading="lazy">
                     </div>
                     <h3 class="product-name" data-en="Ferrero Rocher Cake">Τούρτα Ferrero Rocher</h3>
-                    <p class="product-desc" data-en="A combination of chocolate with a crunchy wafer and a caramelised hazelnut coating.">Συνδυασμός σοκολάτας με τραγανή βάφλα και επικάλυψη καραμελωμένων φουντουκιών.</p>
-                </div>
-                <div class="product-card" data-cat="cakes">
-                    <div class="product-media">
-                        <img src="images/IMG_2856.jpg" alt="Τούρτα Bueno με χρυσά τριαντάφυλλα" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Bueno Cake">Τούρτα Bueno</h3>
-                    <p class="product-desc" data-en="Hazelnut cream with a chocolate coating and hand-made gold roses.">Κρέμα φουντουκιού με επικάλυψη σοκολάτας και χειροποίητα χρυσά τριαντάφυλλα.</p>
-                </div>
-                <div class="product-card" data-cat="cakes">
-                    <div class="product-media">
-                        <img src="images/IMG_2934.jpg" alt="Σοκολατίνα με τραγανή βάφλα" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Chocolate Torte with Crunchy Wafer">Σοκολατίνα με Τραγανή Βάφλα</h3>
-                    <p class="product-desc" data-en="Chocolate cream with a crunchy wafer and a chocolate glaze.">Κρέμα σοκολάτας με τραγανή βάφλα και γλασάρισμα σοκολάτας.</p>
-                </div>
-                <div class="product-card" data-cat="cakes">
-                    <div class="product-media">
-                        <img src="images/IMG_3021.jpg" alt="Τούρτα γενεθλίων με σοκολατάκια και ζαχαρωτά" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Candy Birthday Cake">Τούρτα Γενεθλίων Candy</h3>
-                    <p class="product-desc" data-en="Cookie cake piled high with chocolate bars, biscuits and sweets.">Τούρτα cookies γεμάτη σοκολάτες, μπισκότα και ζαχαρωτά.</p>
-                </div>
-                <div class="product-card" data-cat="cakes">
-                    <div class="product-media">
-                        <img src="images/IMG_3095.jpg" alt="Τούρτα γιορτή της μητέρας με ροζ γλάσο" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Mother's Day Cake">Τούρτα Γιορτή της Μητέρας</h3>
-                    <p class="product-desc" data-en="Vanilla with a pink drip, meringues and a fondant design.">Βανίλια με ροζ γλάσο, μαρέγκες και σχέδιο από ζαχαρόπαστα.</p>
-                </div>
-                <div class="product-card" data-cat="cakes">
-                    <div class="product-media">
-                        <img src="images/pigscake.jpg" alt="Σοκολατένια τούρτα με γουρουνάκια ζαχαρόπαστας" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Little Pigs Cake">Τούρτα Γουρουνάκια</h3>
-                    <p class="product-desc" data-en="Chocolate cake edged with wafer rolls and handmade fondant piglets.">Σοκολατένια τούρτα με γκοφρέτες και χειροποίητα γουρουνάκια.</p>
-                </div>
-                <div class="product-card" data-cat="cakes">
-                    <div class="product-media">
-                        <img src="images/apescake.jpg" alt="Παιδική τούρτα ζούγκλα με γορίλες" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Jungle Cake">Τούρτα Ζούγκλα</h3>
-                    <p class="product-desc" data-en="A children's jungle scene with a fondant waterfall and handmade plants.">Παιδική τούρτα ζαχαρόπαστας ζούγκλας με καταρράκτη και χειροποίητα φυτά.</p>
-                </div>
-                <div class="product-card" data-cat="cakes">
-                    <div class="product-media">
-                        <img src="images/btscake.jpg" alt="Τούρτα BTS με φιγούρες ζαχαρόπαστας" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="BTS Cake">Τούρτα BTS</h3>
-                    <p class="product-desc" data-en="A concert-stage cake with hand-sculpted fondant figures.">Τούρτα σκηνής με χειροποίητες φιγούρες ζαχαρόπαστας.</p>
-                </div>
-                <div class="product-card" data-cat="cakes">
-                    <div class="product-media">
-                        <img src="images/luisvcake.jpg" alt="Τούρτα σε σχήμα τσάντας με μονόγραμμα" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Handbag Cake">Τούρτα Τσάντα</h3>
-                    <p class="product-desc" data-en="A monogrammed handbag cake, finished with a fondant rose.">Τούρτα-τσάντα με μονόγραμμα και τριαντάφυλλο ζαχαρόπαστας.</p>
-                </div>
-                <div class="product-card" data-cat="cakes">
-                    <div class="product-media">
-                        <img src="images/costumcake_law.jpg" alt="Τούρτα αποφοίτησης με καπέλο και δίπλωμα" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Graduation Cake">Τούρτα Αποφοίτησης</h3>
-                    <p class="product-desc" data-en="Graduation cap, diploma and a personalised dedication.">Καπέλο αποφοίτησης, δίπλωμα και προσωποποιημένη αφιέρωση.</p>
-                </div>
-                <div class="product-card" data-cat="cakes">
-                    <div class="product-media">
-                        <img src="images/IMG_2828.jpg" alt="Τούρτα ανάμεικτη σοκολάτα και βανίλια" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Mixed Cake">Τούρτα Ανάμεικτη</h3>
-                    <p class="product-desc" data-en="Chocolate and vanilla.">Σοκολάτα και βανίλια.</p>
-                </div>
-
-                <!-- ---------- Παγωτά ---------- -->
-                <div class="product-card" data-cat="icecream">
-                    <div class="product-media">
-                        <img src="images/IMG_3247.jpg" alt="Βιτρίνα με χειροποίητα παγωτά" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Ice Cream Counter">Βιτρίνα Παγωτού</h3>
-                    <p class="product-desc" data-en="Handmade ice cream in flavours that change daily.">Χειροποίητο παγωτό σε γεύσεις που αλλάζουν καθημερινά.</p>
+                    <p class="product-desc" data-en="A combination of chocolate with a crunchy wafer and caramelised hazelnuts.">Συνδυασμός σοκολάτας με τραγανή βάφλα και καραμελωμένων φουντουκιών.</p>
                 </div>
                 <div class="product-card" data-cat="icecream">
                     <div class="product-media">
-                        <img src="images/IMG_3968.jpg" alt="Παγωτό καϊμάκι" class="product-img">
+                        <img src="images/icecream_minis.jpg" alt="Βιτρίνα με παγωτά σε κώνο και ξυλάκι βουτηγμένα σε σοκολάτα" class="product-img" loading="lazy">
                     </div>
-                    <h3 class="product-name" data-en="Kaimaki Ice Cream">Παγωτό Καϊμάκι</h3>
-                    <p class="product-desc" data-en="The classic kaimaki, with Chios mastic and pure fresh cream.">Το κλασικό καϊμάκι, με μαστίχα Χίου και αγνή κρέμα γάλακτος.</p>
+                    <h3 class="product-name" data-en="Mini Ice Creams">Παγωτίνια</h3>
+                    <p class="product-desc" data-en="A variety of mini ice creams in more than 10 flavours.">Ποικιλία από παγωτίνια σε πάνω από 10 γεύσεις.</p>
                 </div>
-                <div class="product-card" data-cat="icecream">
-                    <div class="product-media">
-                        <img src="images/IMG_3958.jpg" alt="Παγωτό ΙΟΝ αμυγδάλου" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Almond Ice Cream">Παγωτό ΙΟΝ Αμυγδάλου</h3>
-                    <p class="product-desc" data-en="Ice cream with melted ION couverture and roasted almonds.">Παγωτό με λιωμένη κουβερτούρα ΙΟΝ και καβουρδισμένα αμύγδαλα.</p>
-                </div>
-                <div class="product-card" data-cat="icecream">
-                    <div class="product-media">
-                        <img src="images/IMG_3959.jpg" alt="Παγωτό πραλίνα φουντουκιού" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Hazelnut Praline Ice Cream">Παγωτό Πραλίνα Φουντουκιού</h3>
-                    <p class="product-desc" data-en="Hazelnut praline with crunchy chocolate pieces and whole hazelnuts.">Πραλίνα φουντουκιού με τραγανά κομμάτια σοκολάτας και φουντούκια.</p>
-                </div>
-                <div class="product-card" data-cat="icecream">
-                    <div class="product-media">
-                        <img src="images/IMG_3961.jpg" alt="Παγωτό σοκολάτα με brownie" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Brownie Ice Cream">Παγωτό Brownie</h3>
-                    <p class="product-desc" data-en="Chocolate ice cream with brownie chunks and a chocolate ripple.">Παγωτό σοκολάτα με κομμάτια brownie και σιρόπι σοκολάτας.</p>
-                </div>
-                <div class="product-card" data-cat="icecream">
-                    <div class="product-media">
-                        <img src="images/IMG_3960.jpg" alt="Παγωτό γιαούρτι με βύσσινο" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Sour Cherry Yogurt Ice Cream">Παγωτό Γιαούρτι Βύσσινο</h3>
-                    <p class="product-desc" data-en="Yogurt ice cream swirled with spoon-sweet sour cherries.">Παγωτό γιαούρτι με γλυκό βύσσινο του κουταλιού.</p>
-                </div>
-                <div class="product-card" data-cat="icecream">
-                    <div class="product-media">
-                        <img src="images/IMG_3962.jpg" alt="Παγωτό Black Forest με βύσσινο" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Black Forest Ice Cream">Παγωτό Black Forest</h3>
-                    <p class="product-desc" data-en="Chocolate ice cream with sour cherries and chocolate chunks.">Παγωτό σοκολάτα με βύσσινο και κομμάτια κουβερτούρας.</p>
-                </div>
-                <div class="product-card" data-cat="icecream">
-                    <div class="product-media">
-                        <img src="images/IMG_3966.jpg" alt="Παγωτό καραμέλα με λευκή σοκολάτα" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Caramel Ice Cream">Παγωτό Καραμέλα</h3>
-                    <p class="product-desc" data-en="Caramel ice cream with salted caramel and white chocolate.">Παγωτό καραμέλα με αλμυρή καραμέλα και λευκή σοκολάτα.</p>
-                </div>
-                <div class="product-card" data-cat="icecream">
-                    <div class="product-media">
-                        <img src="images/IMG_3967.jpg" alt="Παγωτό τσουρέκι με κανέλα" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Tsoureki Ice Cream">Παγωτό Τσουρέκι</h3>
-                    <p class="product-desc" data-en="Vanilla cream with pieces of syrup-soaked tsoureki and cinnamon.">Κρέμα βανίλια με κομμάτια σιροπιαστού τσουρέκι και κανέλα.</p>
-                </div>
-                <div class="product-card" data-cat="icecream">
-                    <div class="product-media">
-                        <img src="images/IMG_3963.jpg" alt="Παγωτό τσιχλόφουσκα σε ροζ και γαλάζιο" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Bubblegum Ice Cream">Παγωτό Τσιχλόφουσκα</h3>
-                    <p class="product-desc" data-en="The children's favourite, in pink and blue.">Το αγαπημένο των παιδιών, σε ροζ και γαλάζιο.</p>
-                </div>
-                <div class="product-card" data-cat="icecream">
-                    <div class="product-media">
-                        <img src="images/IMG_3235.jpg" alt="Παγωτό καραμέλα" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Caramel Ice Cream">Παγωτό Καραμέλα</h3>
-                    <p class="product-desc" data-en="Caramel ice cream with caramel sauce.">Παγωτό καραμέλα με σάλτσα καραμέλας.</p>
-                </div>
-
-                <!-- ---------- Γλυκά ---------- -->
                 <div class="product-card" data-cat="pastries">
                     <div class="product-media">
-                        <img src="images/IMG_2237.jpg" alt="Μιλφέιγ με άχνη ζάχαρη και κανέλα" class="product-img">
+                        <img src="images/IMG_2237.jpg" alt="Μιλφέιγ με άχνη ζάχαρη και κανέλα" class="product-img" loading="lazy">
                     </div>
                     <h3 class="product-name" data-en="Millefeuille">Μιλφέιγ</h3>
                     <p class="product-desc" data-en="Crisp puff pastry, vanilla cream, icing sugar and cinnamon.">Τραγανή σφολιάτα με κρέμα βανίλιας, άχνη και κανέλα.</p>
                 </div>
-                <div class="product-card" data-cat="pastries">
+                <div class="product-card" data-cat="cakes">
                     <div class="product-media">
-                        <img src="images/IMG_2298.jpg" alt="Πάστα σοκολάτα με γκανάς καθρέφτη" class="product-img">
+                        <img src="images/IMG_2856.jpg" alt="Τούρτα Bueno με χρυσά τριαντάφυλλα" class="product-img" loading="lazy">
                     </div>
-                    <h3 class="product-name" data-en="Chocolate Pastry">Πάστα Σοκολάτα</h3>
-                    <p class="product-desc" data-en="Chocolate sponge under mirror ganache with piped couverture cream.">Παντεσπάνι σοκολάτας με γκανάς καθρέφτη και κρέμα κουβερτούρας.</p>
+                    <h3 class="product-name" data-en="Bueno Cake">Τούρτα Bueno</h3>
+                    <p class="product-desc" data-en="Hazelnut cream with a chocolate coating and hand-made gold roses.">Κρέμα φουντουκιού με επικάλυψη σοκολάτας και χειροποίητα χρυσά τριαντάφυλλα.</p>
+                </div>
+                <div class="product-card" data-cat="icecream">
+                    <div class="product-media">
+                        <img src="images/icecream_bowl.jpg" alt="Μπολ με παγωτό βανίλια, σοκολάτα και σάλτσα σοκολάτας" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Ice Cream Bowl">Μπολ Παγωτού</h3>
+                    <p class="product-desc" data-en="Scoops of vanilla and chocolate ice cream with chocolate sauce.">Μπάλες παγωτού βανίλια και σοκολάτα με σάλτσα σοκολάτας.</p>
                 </div>
                 <div class="product-card" data-cat="pastries">
                     <div class="product-media">
-                        <img src="images/IMG_2738.jpg" alt="Εκλέρ με επικάλυψη σοκολάτας" class="product-img">
+                        <img src="images/marzipan_fruits.jpg" alt="Αμυγδαλωτά σε σχήμα φρούτων σε βάση σοκολάτας" class="product-img" loading="lazy">
                     </div>
-                    <h3 class="product-name" data-en="Chocolate Éclair">Εκλέρ Σοκολάτας</h3>
-                    <p class="product-desc" data-en="Choux filled with vanilla cream, glazed in milk chocolate.">Πατ σου με κρέμα βανίλιας και επικάλυψη σοκολάτας γάλακτος.</p>
+                    <h3 class="product-name" data-en="Fruits">Φρούτα</h3>
+                    <p class="product-desc" data-en="Handmade sweets in the shape of fruits, on a crunchy wafer biscuit base.">Χειροποίητα γλυκά σε σχήμα φρούτων, σε βάση μπισκότου από τραγανή βάφλα.</p>
+                </div>
+                <div class="product-card" data-cat="cakes">
+                    <div class="product-media">
+                        <img src="images/IMG_2934.jpg" alt="Σοκολατίνα με τραγανή βάφλα" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Chocolate Torte with Crunchy Wafer">Σοκολατίνα με Τραγανή Βάφλα</h3>
+                    <p class="product-desc" data-en="Chocolate cream with a crunchy wafer and a chocolate glaze.">Κρέμα σοκολάτας με τραγανή βάφλα και γλασάρισμα σοκολάτας.</p>
+                </div>
+                <div class="product-card" data-cat="icecream">
+                    <div class="product-media">
+                        <img src="images/icecream_cakes.jpg" alt="Βιτρίνα με τούρτες παγωτού και φρέσκιες φράουλες" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Ice Cream Cakes">Τούρτες Παγωτού</h3>
+                    <p class="product-desc" data-en="Ice cream cakes in 7 wonderful flavours with distinctive garnishing.">Τούρτες παγωτού σε 7 υπέροχες γεύσεις με ξεχωριστό γαρνίρισμα.</p>
                 </div>
                 <div class="product-card" data-cat="pastries">
                     <div class="product-media">
-                        <img src="images/IMG_2597.jpg" alt="Ατομικές ταρτάκια με κρέμα φουντουκιού Bueno" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Bueno Tartlets">Ταρτάκια Bueno</h3>
-                    <p class="product-desc" data-en="Individual tartlets with Bueno hazelnut cream on a crisp base.">Ατομικές ταρτάκια με κρέμα φουντουκιού Bueno και τραγανή βάση.</p>
-                </div>
-                <div class="product-card" data-cat="pastries">
-                    <div class="product-media">
-                        <img src="images/IMG_2403.jpg" alt="Τάρτα λεμόνι με καψαλισμένη μαρέγκα" class="product-img">
+                        <img src="images/IMG_2403.jpg" alt="Τάρτα λεμόνι με καψαλισμένη μαρέγκα" class="product-img" loading="lazy">
                     </div>
                     <h3 class="product-name" data-en="Lemon Meringue Tart">Τάρτα Λεμόνι</h3>
                     <p class="product-desc" data-en="Lemon curd in a crisp shell, crowned with torched meringue.">Κρέμα λεμονιού σε τραγανή βάση με καψαλισμένη μαρέγκα.</p>
                 </div>
-                <div class="product-card" data-cat="pastries">
+                <div class="product-card" data-cat="cakes">
                     <div class="product-media">
-                        <img src="images/IMG_2504.jpg" alt="Ταρτάκια με κρέμα και φρέσκιες φράουλες" class="product-img">
+                        <img src="images/IMG_2828.jpg" alt="Τούρτα ανάμεικτη σοκολάτα και βανίλια" class="product-img" loading="lazy">
                     </div>
-                    <h3 class="product-name" data-en="Strawberry Tartlets">Ταρτάκια Φράουλα</h3>
-                    <p class="product-desc" data-en="Butter pastry, crème pâtissière and fresh glazed strawberries.">Ζύμη βουτύρου με κρέμα πατισερί και φρέσκιες φράουλες.</p>
+                    <h3 class="product-name" data-en="Mixed Cake">Τούρτα Ανάμεικτη</h3>
+                    <p class="product-desc" data-en="Chocolate and vanilla.">Σοκολάτα και βανίλια.</p>
+                </div>
+                <div class="product-card" data-cat="icecream">
+                    <div class="product-media">
+                        <img src="images/IMG_3963.jpg" alt="Παγωτό τσιχλόφουσκα σε ροζ και γαλάζιο" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Bubblegum Ice Cream">Παγωτό Τσιχλόφουσκα</h3>
+                    <p class="product-desc" data-en="The children's favourite, in pink and blue.">Το αγαπημένο των παιδιών, σε ροζ και γαλάζιο.</p>
                 </div>
                 <div class="product-card" data-cat="pastries">
                     <div class="product-media">
-                        <img src="images/IMG_2395.jpg" alt="Πάστα σοκολάτα-φράουλα σε σχήμα καρδιάς" class="product-img">
+                        <img src="images/IMG_2395.jpg" alt="Πάστα σοκολάτα-φράουλα σε σχήμα καρδιάς" class="product-img" loading="lazy">
                     </div>
                     <h3 class="product-name" data-en="Chocolate Strawberry Pastry">Πάστα Σοκολάτα Φράουλα</h3>
                     <p class="product-desc" data-en="A chocolate-strawberry heart with strawberry jelly and a cocoa truffle.">Καρδιά σοκολάτα-φράουλα με ζελέ φράουλας και τρούφα κακάο.</p>
                 </div>
-                <div class="product-card" data-cat="pastries">
+                <div class="product-card" data-cat="syrup">
                     <div class="product-media">
-                        <img src="images/IMG_2576.jpg" alt="Ατομική πάστα Lotus" class="product-img">
+                        <img src="images/siropiasta_vitrina.jpg" alt="Βιτρίνα με ποικιλία σιροπιαστών" class="product-img" loading="lazy">
                     </div>
-                    <h3 class="product-name" data-en="Lotus Pastry">Πάστα Lotus</h3>
-                    <p class="product-desc" data-en="Lotus biscuit mousse on a crunchy speculoos base.">Μους μπισκότου Lotus σε τραγανή βάση από θρυμματισμένο μπισκότο.</p>
+                    <h3 class="product-name" data-en="Syrup Sweet Selection">Ποικιλία Σιροπιαστών</h3>
+                    <p class="product-desc" data-en="Baklava, kataifi, saragli and chocolate pie — fresh every day.">Μπακλαβάς, κανταΐφι, σαραγλί και σοκολατόπιτα, φρέσκα κάθε μέρα.</p>
+                </div>
+                <div class="product-card" data-cat="cakes">
+                    <div class="product-media">
+                        <img src="images/IMG_3095.jpg" alt="Τούρτα γιορτή της μητέρας με ροζ γλάσο" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Mother's Day Cake">Τούρτα Γιορτή της Μητέρας</h3>
+                    <p class="product-desc" data-en="Vanilla with a pink drip, meringues and a fondant design.">Βανίλια με ροζ γλάσο, μαρέγκες και σχέδιο από ζαχαρόπαστα.</p>
+                </div>
+                <div class="product-card" data-cat="icecream">
+                    <div class="product-media">
+                        <img src="images/IMG_3960.jpg" alt="Παγωτό γιαούρτι με βύσσινο" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Sour Cherry Yogurt Ice Cream">Παγωτό Γιαούρτι Βύσσινο</h3>
+                    <p class="product-desc" data-en="Yogurt ice cream swirled with spoon-sweet sour cherries.">Παγωτό γιαούρτι με γλυκό βύσσινο του κουταλιού.</p>
                 </div>
                 <div class="product-card" data-cat="pastries">
                     <div class="product-media">
-                        <img src="images/IMG_2378.jpg" alt="Ατομικό cheesecake με κεράσι" class="product-img">
+                        <img src="images/IMG_2378.jpg" alt="Ατομικό cheesecake με κεράσι" class="product-img" loading="lazy">
                     </div>
                     <h3 class="product-name" data-en="Cherry Cheesecake">Cheesecake Κεράσι</h3>
                     <p class="product-desc" data-en="Cream cheese on a biscuit base, topped with cherry compote.">Κρέμα τυριού σε βάση μπισκότου με κεράσι.</p>
                 </div>
+                <div class="product-card" data-cat="cakes">
+                    <div class="product-media">
+                        <img src="images/apescake.jpg" alt="Παιδική τούρτα ζούγκλα με γορίλες" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Jungle Cake">Τούρτα Ζούγκλα</h3>
+                    <p class="product-desc" data-en="A children's jungle scene with a fondant waterfall and handmade plants.">Παιδική τούρτα ζαχαρόπαστας ζούγκλας με καταρράκτη και χειροποίητα φυτά.</p>
+                </div>
+                <div class="product-card" data-cat="icecream">
+                    <div class="product-media">
+                        <img src="images/IMG_3962.jpg" alt="Παγωτό Black Forest με βύσσινο" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Black Forest Ice Cream">Παγωτό Black Forest</h3>
+                    <p class="product-desc" data-en="Chocolate ice cream with sour cherries and chocolate chunks.">Παγωτό σοκολάτα με βύσσινο και κομμάτια κουβερτούρας.</p>
+                </div>
                 <div class="product-card" data-cat="pastries">
                     <div class="product-media">
-                        <img src="images/IMG_2365.jpg" alt="Ατομικό εκμέκ καταΐφι" class="product-img">
+                        <img src="images/IMG_2365.jpg" alt="Ατομικό εκμέκ καταΐφι" class="product-img" loading="lazy">
                     </div>
                     <h3 class="product-name" data-en="Individual Ekmek Kataifi">Εκμέκ Καταΐφη (Ατομικό)</h3>
                     <p class="product-desc" data-en="Syrup-soaked kataifi with pastry cream and whipped cream, individual portion.">Κανταΐφι σε σιρόπι με κρέμα ζαχαροπλαστικής και σαντιγί, σε ατομική μερίδα.</p>
                 </div>
+                <div class="product-card" data-cat="cakes">
+                    <div class="product-media">
+                        <img src="images/btscake.jpg" alt="Τούρτα BTS με φιγούρες ζαχαρόπαστας" class="product-img" loading="lazy" style="object-position: 50% 10%;">
+                    </div>
+                    <h3 class="product-name" data-en="BTS Cake">Τούρτα BTS</h3>
+                    <p class="product-desc" data-en="A concert-stage cake with hand-sculpted fondant figures.">Τούρτα σκηνής με χειροποίητες φιγούρες ζαχαρόπαστας.</p>
+                </div>
+                <div class="product-card" data-cat="icecream">
+                    <div class="product-media">
+                        <img src="images/IMG_3966.jpg" alt="Παγωτό καραμέλα με λευκή σοκολάτα" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Caramel Ice Cream">Παγωτό Καραμέλα</h3>
+                    <p class="product-desc" data-en="Caramel ice cream with salted caramel and white chocolate.">Παγωτό καραμέλα με αλμυρή καραμέλα και λευκή σοκολάτα.</p>
+                </div>
                 <div class="product-card" data-cat="pastries">
                     <div class="product-media">
-                        <img src="images/IMG_2428.jpg" alt="Μπανόφι με σαντιγί και αμύγδαλα" class="product-img">
+                        <img src="images/IMG_2428.jpg" alt="Μπανόφι με σαντιγί και αμύγδαλα" class="product-img" loading="lazy">
                     </div>
                     <h3 class="product-name" data-en="Banoffee">Banoffee</h3>
                     <p class="product-desc" data-en="Banana, caramel and chantilly, finished with toasted almonds.">Μπανάνα, καραμέλα και σαντιγί με καβουρδισμένο αμύγδαλο.</p>
                 </div>
+                <div class="product-card" data-cat="syrup">
+                    <div class="product-media">
+                        <img src="images/IMG_3318.jpg" alt="Σαραγλάκια και μπακλαβαδάκια" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Saragli &amp; Mini Baklava">Σαραγλάκια &amp; Μπακλαβαδάκια</h3>
+                    <p class="product-desc" data-en="Freshly baked, with walnut, almond and syrup.">Φρεσκοψημένα, με καρύδι, αμύγδαλο και σιρόπι.</p>
+                </div>
+                <div class="product-card" data-cat="cakes">
+                    <div class="product-media">
+                        <img src="images/luisvcake.jpg" alt="Τούρτα σε σχήμα τσάντας με μονόγραμμα" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Handbag Cake">Τούρτα Τσάντα</h3>
+                    <p class="product-desc" data-en="A monogrammed handbag cake, finished with a fondant rose.">Τούρτα-τσάντα με μονόγραμμα και τριαντάφυλλο ζαχαρόπαστας.</p>
+                </div>
+                <div class="product-card" data-cat="icecream">
+                    <div class="product-media">
+                        <img src="images/IMG_3961.jpg" alt="Παγωτό σοκολάτα με brownie" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Brownie Ice Cream">Παγωτό Brownie</h3>
+                    <p class="product-desc" data-en="Chocolate ice cream with brownie chunks and a chocolate ripple.">Παγωτό σοκολάτα με κομμάτια brownie και σιρόπι σοκολάτας.</p>
+                </div>
                 <div class="product-card" data-cat="pastries">
                     <div class="product-media">
-                        <img src="images/IMG_3154.jpg" alt="Εκμέκ καταΐφι με κρέμα και σαντιγί" class="product-img">
+                        <img src="images/IMG_3154.jpg" alt="Εκμέκ καταΐφι με κρέμα και σαντιγί" class="product-img" loading="lazy">
                     </div>
                     <h3 class="product-name" data-en="Ekmek Kataifi">Εκμέκ Καταΐφη</h3>
                     <p class="product-desc" data-en="Syrup-soaked kataifi with pastry cream and whipped cream.">Κανταΐφι σε σιρόπι με κρέμα ζαχαροπλαστικής και σαντιγί.</p>
                 </div>
+                <div class="product-card" data-cat="cakes">
+                    <div class="product-media">
+                        <img src="images/pigscake.jpg" alt="Σοκολατένια τούρτα με γουρουνάκια ζαχαρόπαστας" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Little Pigs Cake">Τούρτα Γουρουνάκια</h3>
+                    <p class="product-desc" data-en="Chocolate cake edged with wafer rolls and handmade fondant piglets.">Σοκολατένια τούρτα με γκοφρέτες και χειροποίητα γουρουνάκια.</p>
+                </div>
+                <div class="product-card" data-cat="icecream">
+                    <div class="product-media">
+                        <img src="images/IMG_3235.jpg" alt="Παγωτό καραμέλα" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Caramel Ice Cream">Παγωτό Καραμέλα</h3>
+                    <p class="product-desc" data-en="Caramel ice cream with caramel sauce.">Παγωτό καραμέλα με σάλτσα καραμέλας.</p>
+                </div>
                 <div class="product-card" data-cat="pastries">
                     <div class="product-media">
-                        <img src="images/IMG_2792.jpg" alt="Προφιτερόλ με μους σοκολάτας και σαντιγί" class="product-img">
+                        <img src="images/IMG_2792.jpg" alt="Προφιτερόλ με μους σοκολάτας και σαντιγί" class="product-img" loading="lazy">
                     </div>
                     <h3 class="product-name" data-en="Profiteroles">Προφιτερόλ</h3>
                     <p class="product-desc" data-en="Chocolate mousse and choux buns filled with whipped cream.">Μους σοκολάτας και σου γεμιστά με σαντιγή.</p>
                 </div>
+                <div class="product-card" data-cat="cakes">
+                    <div class="product-media">
+                        <img src="images/costumcake_law.jpg" alt="Τούρτα αποφοίτησης με καπέλο και δίπλωμα" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Graduation Cake">Τούρτα Αποφοίτησης</h3>
+                    <p class="product-desc" data-en="Graduation cap, diploma and a personalised dedication.">Καπέλο αποφοίτησης, δίπλωμα και προσωποποιημένη αφιέρωση.</p>
+                </div>
+                <div class="product-card" data-cat="icecream">
+                    <div class="product-media">
+                        <img src="images/IMG_3959.jpg" alt="Παγωτό πραλίνα φουντουκιού" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Hazelnut Praline Ice Cream">Παγωτό Πραλίνα Φουντουκιού</h3>
+                    <p class="product-desc" data-en="Hazelnut praline with crunchy chocolate pieces and whole hazelnuts.">Πραλίνα φουντουκιού με τραγανά κομμάτια σοκολάτας και φουντούκια.</p>
+                </div>
                 <div class="product-card" data-cat="pastries">
                     <div class="product-media">
-                        <img src="images/cookiesPasta.jpg" alt="Ατομική πάστα Royal με γκανάς και μπισκότο" class="product-img">
+                        <img src="images/IMG_2298.jpg" alt="Πάστα σοκολάτα με γκανάς καθρέφτη" class="product-img" loading="lazy">
                     </div>
-                    <h3 class="product-name" data-en="Cookies Pastry">Πάστα Cookies</h3>
-                    <p class="product-desc" data-en="Cookie mousse with a rich biscuit base and chocolate glaze.">Μους cookies με πλούσιο μπισκότο και γλασάρισμα σοκολάτας.</p>
+                    <h3 class="product-name" data-en="Chocolate Pastry">Πάστα Σοκολάτα</h3>
+                    <p class="product-desc" data-en="Chocolate sponge under mirror ganache with piped couverture cream.">Παντεσπάνι σοκολάτας με γκανάς καθρέφτη και κρέμα κουβερτούρας.</p>
                 </div>
-
-                <!-- ---------- Εποχικά ---------- -->
-                <div class="product-card" data-cat="seasonal">
+                <div class="product-card" data-cat="cakes">
                     <div class="product-media">
-                        <img src="images/melomakarona.jpg" alt="Μελομακάρονα με καρύδι" class="product-img">
+                        <img src="images/IMG_3021.jpg" alt="Τούρτα γενεθλίων με σοκολατάκια και ζαχαρωτά" class="product-img" loading="lazy">
                     </div>
-                    <h3 class="product-name" data-en="Melomakarona">Μελομακάρονα</h3>
-                    <p class="product-desc" data-en="Traditional, with orange, honey and crushed walnuts.">Παραδοσιακά, με πορτοκάλι, μέλι και τριμμένο καρύδι.</p>
+                    <h3 class="product-name" data-en="Candy Birthday Cake">Τούρτα Γενεθλίων Candy</h3>
+                    <p class="product-desc" data-en="Cookie cake piled high with chocolate bars, biscuits and sweets.">Τούρτα cookies γεμάτη σοκολάτες, μπισκότα και ζαχαρωτά.</p>
                 </div>
-                <div class="product-card" data-cat="seasonal">
+                <div class="product-card" data-cat="icecream">
                     <div class="product-media">
-                        <img src="images/mel_choc.jpg" alt="Μελομακάρονα με επικάλυψη σοκολάτας" class="product-img">
+                        <img src="images/IMG_3967.jpg" alt="Παγωτό τσουρέκι με κανέλα" class="product-img" loading="lazy">
                     </div>
-                    <h3 class="product-name" data-en="Chocolate Melomakarona">Μελομακάρονα Σοκολάτας</h3>
-                    <p class="product-desc" data-en="Melomakarona dipped in dark couverture and sprinkled with walnut.">Μελομακάρονα βουτηγμένα σε κουβερτούρα με τριμμένο καρύδι.</p>
+                    <h3 class="product-name" data-en="Tsoureki Ice Cream">Παγωτό Τσουρέκι</h3>
+                    <p class="product-desc" data-en="Vanilla cream with pieces of syrup-soaked tsoureki and cinnamon.">Κρέμα βανίλια με κομμάτια σιροπιαστού τσουρέκι και κανέλα.</p>
                 </div>
-                <div class="product-card" data-cat="seasonal">
+                <div class="product-card" data-cat="pastries">
                     <div class="product-media">
-                        <img src="images/kourabi.jpg" alt="Κουραμπιέδες με άχνη ζάχαρη" class="product-img">
+                        <img src="images/IMG_2504.jpg" alt="Ταρτάκια με κρέμα και φρέσκιες φράουλες" class="product-img" loading="lazy">
                     </div>
-                    <h3 class="product-name" data-en="Kourabiedes">Κουραμπιέδες</h3>
-                    <p class="product-desc" data-en="All-butter, with roasted almond and a snow of icing sugar.">Βουτύρου, με ψημένο αμύγδαλο και άφθονη άχνη ζάχαρη.</p>
+                    <h3 class="product-name" data-en="Strawberry Tartlets">Ταρτάκια Φράουλα</h3>
+                    <p class="product-desc" data-en="Butter pastry, crème pâtissière and fresh glazed strawberries.">Ζύμη βουτύρου με κρέμα πατισερί και φρέσκιες φράουλες.</p>
                 </div>
-                <div class="product-card" data-cat="seasonal">
+                <div class="product-card" data-cat="icecream">
                     <div class="product-media">
-                        <img src="images/kour_wchoc.jpg" alt="Κουραμπιέδες με λευκή σοκολάτα" class="product-img">
+                        <img src="images/IMG_3968.jpg" alt="Παγωτό καϊμάκι" class="product-img" loading="lazy">
                     </div>
-                    <h3 class="product-name" data-en="White Chocolate Kourabiedes">Κουραμπιέδες Λευκής Σοκολάτας</h3>
-                    <p class="product-desc" data-en="Coated in white chocolate with a dark chocolate drizzle.">Καλυμμένοι με λευκή σοκολάτα και σχέδια κουβερτούρας.</p>
+                    <h3 class="product-name" data-en="Kaimaki Ice Cream">Παγωτό Καϊμάκι</h3>
+                    <p class="product-desc" data-en="The classic kaimaki, with Chios mastic and pure fresh cream.">Το κλασικό καϊμάκι, με μαστίχα Χίου και αγνή κρέμα γάλακτος.</p>
                 </div>
-                <div class="product-card" data-cat="seasonal">
-                    <div class="product-media">
-                        <img src="images/christmas_trees.jpg" alt="Χριστουγεννιάτικα δεντράκια από μπισκότο" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Gingerbread Trees">Χριστουγεννιάτικα Δεντράκια</h3>
-                    <p class="product-desc" data-en="Stacked biscuit towers with royal icing and sweets.">Πυραμίδες από μπισκότο με γλάσο και ζαχαρωτά.</p>
-                </div>
-                <div class="product-card" data-cat="seasonal">
-                    <div class="product-media">
-                        <img src="images/christmasTrees1.jpg" alt="Δεντράκια με κουβερτούρα και κουφετάκια" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Chocolate Trees">Δεντράκια Σοκολάτας</h3>
-                    <p class="product-desc" data-en="Biscuit trees in couverture with coloured sugar pearls.">Μπισκοτένια δεντράκια με κουβερτούρα και χρωματιστά κουφετάκια.</p>
-                </div>
-                <div class="product-card" data-cat="seasonal">
-                    <div class="product-media">
-                        <img src="images/tsourekiab.jpg" alt="Τσουρέκια με φιλέ αμυγδάλου" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Almond Tsoureki">Τσουρέκι Αμυγδάλου</h3>
-                    <p class="product-desc" data-en="Butter braid with mahleb, mastic and flaked almonds.">Πλεξούδα βουτύρου με μαχλέπι, μαστίχα και φιλέ αμυγδάλου.</p>
-                </div>
-                <div class="product-card" data-cat="seasonal">
-                    <div class="product-media">
-                        <img src="images/tsourekiachoc.jpg" alt="Τσουρέκια με επικάλυψη σοκολάτας" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Chocolate Tsoureki">Τσουρέκι Σοκολάτας</h3>
-                    <p class="product-desc" data-en="Tsoureki covered in milk, white or hazelnut chocolate.">Τσουρέκι καλυμμένο με σοκολάτα γάλακτος, λευκή ή φουντουκιού.</p>
-                </div>
-                <div class="product-card" data-cat="seasonal">
-                    <div class="product-media">
-                        <img src="images/easterbakephoto.jpg" alt="Τσουρέκια και κουλούρες στο εργαστήριο" class="product-img">
-                    </div>
-                    <h3 class="product-name" data-en="Easter Bakes">Πασχαλινό Εργαστήριο</h3>
-                    <p class="product-desc" data-en="Tsoureki and round loaves, baked fresh every Easter.">Τσουρέκια και κουλούρες, φρεσκοψημένα κάθε Πάσχα.</p>
-                </div>
-
-                <!-- ---------- Σιροπιαστά ---------- -->
                 <div class="product-card" data-cat="syrup">
                     <div class="product-media">
-                        <img src="images/IMG_3268.jpg" alt="Ατομικό γαλακτομπούρεκο" class="product-img">
+                        <img src="images/baklava_tray.jpg" alt="Μπακλαβάς κομμένος σε κομμάτια" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Baklava">Μπακλαβάς</h3>
+                    <p class="product-desc" data-en="Crisp filo with walnuts, in a clove-spiced syrup.">Φύλλο κρούστας με καρύδι, σε σιρόπι με γαρύφαλλο.</p>
+                </div>
+                <div class="product-card" data-cat="syrup">
+                    <div class="product-media">
+                        <img src="images/IMG_3268.jpg" alt="Ατομικό γαλακτομπούρεκο" class="product-img" loading="lazy">
                     </div>
                     <h3 class="product-name" data-en="Individual Galaktoboureko">Γαλακτομπούρεκο Ατομικό</h3>
                     <p class="product-desc" data-en="Crisp filo around semolina custard, soaked in light syrup.">Τραγανό φύλλο με κρέμα σιμιγδαλιού, σε ελαφρύ σιρόπι.</p>
                 </div>
                 <div class="product-card" data-cat="syrup">
                     <div class="product-media">
-                        <img src="images/galaktoboureko.jpg" alt="Γαλακτομπούρεκο ταψιού" class="product-img">
+                        <img src="images/galaktoboureko.jpg" alt="Γαλακτομπούρεκο ταψιού" class="product-img" loading="lazy">
                     </div>
                     <h3 class="product-name" data-en="Galaktoboureko Tray">Γαλακτομπούρεκο Ταψιού</h3>
                     <p class="product-desc" data-en="A whole tray of vanilla custard under golden filo.">Ολόκληρο ταψί με κρέμα βανίλιας κάτω από χρυσαφένιο φύλλο.</p>
                 </div>
-                <div class="product-card" data-cat="syrup">
+
+                <!-- ---------- Εποχικά (always last) ---------- -->
+                <div class="product-card" data-cat="seasonal">
                     <div class="product-media">
-                        <img src="images/IMG_3318.jpg" alt="Σαραγλάκια και μπακλαβαδάκια" class="product-img">
+                        <img src="images/melomakarona.jpg" alt="Μελομακάρονα με καρύδι" class="product-img" loading="lazy">
                     </div>
-                    <h3 class="product-name" data-en="Saragli &amp; Mini Baklava">Σαραγλάκια &amp; Μπακλαβαδάκια</h3>
-                    <p class="product-desc" data-en="Freshly baked, with walnut, almond and syrup.">Φρεσκοψημένα, με καρύδι, αμύγδαλο και σιρόπι.</p>
+                    <h3 class="product-name" data-en="Melomakarona">Μελομακάρονα</h3>
+                    <p class="product-desc" data-en="Traditional, with orange, honey and crushed walnuts.">Παραδοσιακά, με πορτοκάλι, μέλι και τριμμένο καρύδι.</p>
                 </div>
-                <div class="product-card" data-cat="syrup">
+                <div class="product-card" data-cat="seasonal">
                     <div class="product-media">
-                        <img src="images/siropiasta_vitrina.jpg" alt="Βιτρίνα με ποικιλία σιροπιαστών" class="product-img">
+                        <img src="images/kourabi.jpg" alt="Κουραμπιέδες με άχνη ζάχαρη" class="product-img" loading="lazy">
                     </div>
-                    <h3 class="product-name" data-en="Syrup Sweet Selection">Ποικιλία Σιροπιαστών</h3>
-                    <p class="product-desc" data-en="Baklava, kataifi, saragli and chocolate pie — fresh every day.">Μπακλαβάς, κανταΐφι, σαραγλί και σοκολατόπιτα, φρέσκα κάθε μέρα.</p>
+                    <h3 class="product-name" data-en="Kourabiedes">Κουραμπιέδες</h3>
+                    <p class="product-desc" data-en="All-butter, with roasted almond and a snow of icing sugar.">Βουτύρου, με ψημένο αμύγδαλο και άφθονη άχνη ζάχαρη.</p>
+                </div>
+                <div class="product-card" data-cat="seasonal">
+                    <div class="product-media">
+                        <img src="images/christmas_trees.jpg" alt="Χριστουγεννιάτικα δεντράκια από μπισκότο" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Gingerbread Trees">Χριστουγεννιάτικα Δεντράκια</h3>
+                    <p class="product-desc" data-en="Stacked biscuit towers with royal icing and sweets.">Πυραμίδες από μπισκότο με γλάσο και ζαχαρωτά.</p>
+                </div>
+                <div class="product-card" data-cat="seasonal">
+                    <div class="product-media">
+                        <img src="images/mel_choc.jpg" alt="Μελομακάρονα με επικάλυψη σοκολάτας" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Chocolate Melomakarona">Μελομακάρονα Σοκολάτας</h3>
+                    <p class="product-desc" data-en="Melomakarona dipped in dark couverture and sprinkled with walnut.">Μελομακάρονα βουτηγμένα σε κουβερτούρα με τριμμένο καρύδι.</p>
+                </div>
+                <div class="product-card" data-cat="seasonal">
+                    <div class="product-media">
+                        <img src="images/kour_wchoc.jpg" alt="Κουραμπιέδες με λευκή σοκολάτα" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="White Chocolate Kourabiedes">Κουραμπιέδες Λευκής Σοκολάτας</h3>
+                    <p class="product-desc" data-en="Coated in white chocolate with a dark chocolate drizzle.">Καλυμμένοι με λευκή σοκολάτα και σχέδια κουβερτούρας.</p>
+                </div>
+                <div class="product-card" data-cat="seasonal">
+                    <div class="product-media">
+                        <img src="images/christmasTrees1.jpg" alt="Δεντράκια με κουβερτούρα και κουφετάκια" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Chocolate Trees">Δεντράκια Σοκολάτας</h3>
+                    <p class="product-desc" data-en="Biscuit trees in couverture with coloured sugar pearls.">Μπισκοτένια δεντράκια με κουβερτούρα και χρωματιστά κουφετάκια.</p>
+                </div>
+                <div class="product-card" data-cat="seasonal">
+                    <div class="product-media">
+                        <img src="images/tsourekiachoc.jpg" alt="Τσουρέκια με επικάλυψη σοκολάτας" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Chocolate Tsoureki">Τσουρέκι Σοκολάτας</h3>
+                    <p class="product-desc" data-en="Tsoureki covered in milk, white or hazelnut chocolate.">Τσουρέκι καλυμμένο με σοκολάτα γάλακτος, λευκή ή φουντουκιού.</p>
+                </div>
+                <div class="product-card" data-cat="seasonal">
+                    <div class="product-media">
+                        <img src="images/tsourekiab.jpg" alt="Τσουρέκια με φιλέ αμυγδάλου" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Almond Tsoureki">Τσουρέκι Αμυγδάλου</h3>
+                    <p class="product-desc" data-en="Butter braid with mahleb, mastic and flaked almonds.">Πλεξούδα βουτύρου με μαχλέπι, μαστίχα και φιλέ αμυγδάλου.</p>
+                </div>
+                <div class="product-card" data-cat="seasonal">
+                    <div class="product-media">
+                        <img src="images/easterbakephoto.jpg" alt="Τσουρέκια και κουλούρες στο εργαστήριο" class="product-img" loading="lazy">
+                    </div>
+                    <h3 class="product-name" data-en="Easter Bakes">Πασχαλινό Εργαστήριο</h3>
+                    <p class="product-desc" data-en="Tsoureki and round loaves, baked fresh every Easter.">Τσουρέκια και κουλούρες, φρεσκοψημένα κάθε Πάσχα.</p>
                 </div>
             </div>
         </section>
@@ -445,16 +491,22 @@
                 <p class="footer-tagline" data-en="The fine art of pâtisserie">Υψηλή τέχνη ζαχαροπλαστικής</p>
             </div>
             <div class="footer-social">
-                <a href="#" class="social-link" aria-label="Instagram">
+                <a href="https://www.instagram.com/zaxaroplasteio_royal/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                         <rect x="2" y="2" width="20" height="20" rx="5"/>
                         <circle cx="12" cy="12" r="4"/>
                         <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
                     </svg>
                 </a>
-                <a href="#" class="social-link" aria-label="Facebook">
+                <a href="https://www.facebook.com/zaxaroplasteio.royal/" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                         <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+                <a href="https://share.google/yxiHzfwpHjZptldyn" class="social-link" aria-label="Google Maps" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                        <circle cx="12" cy="10" r="3"/>
                     </svg>
                 </a>
             </div>

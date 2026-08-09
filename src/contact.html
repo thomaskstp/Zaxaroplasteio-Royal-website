@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-en="Contact — Royal Pâtisserie">Επικοινωνία — Ζαχαροπλαστείο Royal</title>
+    <meta name="description" content="Επικοινωνήστε με το Ζαχαροπλαστείο Royal στη Σπάτα — Βασ. Παύλου 178. Τηλέφωνο, email και φόρμα επικοινωνίας.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Επικοινωνία — Ζαχαροπλαστείο Royal">
+    <meta property="og:description" content="Επικοινωνήστε με το Ζαχαροπλαστείο Royal στη Σπάτα — Βασ. Παύλου 178.">
+    <meta property="og:image" content="https://zaxaroplasteioroyal.gr/images/carousel1.jpg">
+    <meta property="og:url" content="https://zaxaroplasteioroyal.gr/contact.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://zaxaroplasteioroyal.gr/contact.html">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/favicon_white.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,7 +85,7 @@
                         </span>
                         <div>
                             <div class="info-label">Email</div>
-                            <div class="info-value">info@royal-patisserie.gr</div>
+                            <div class="info-value">info@zaxaroplasteioroyal.gr</div>
                         </div>
                     </div>
                     <div class="info-row">
@@ -96,22 +104,29 @@
                     </div>
                 </div>
 
-                <!-- Contact form — client-side only for now, see contact.js -->
-                <form class="contact-form" id="contact-form">
+                <!-- Contact form — submits via Formspree (AJAX, see contact.js).
+                     Temporarily points at k.kostop1974@gmail.com (a real inbox
+                     today) instead of info@zaxaroplasteioroyal.gr, which isn't
+                     live yet. First real submission sends a confirmation link
+                     there that must be clicked once to activate the endpoint.
+                     Swap the action back to the business email once it's set up. -->
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/k.kostop1974@gmail.com" method="POST">
                     <div class="form-field">
                         <label for="name" data-en="Name">Όνομα</label>
                         <input id="name" name="name" type="text" required>
                     </div>
                     <div class="form-field">
                         <label for="email">Email</label>
-                        <input id="email" name="email" type="email" required>
+                        <input id="email" name="_replyto" type="email" required>
                     </div>
                     <div class="form-textarea-field">
                         <label for="message" data-en="Message">Μήνυμα</label>
                         <textarea id="message" name="message" rows="6" required></textarea>
                     </div>
+                    <input type="hidden" name="_subject" value="Νέο μήνυμα από zaxaroplasteioroyal.gr">
                     <button type="submit" class="form-submit" data-en="Send message">Αποστολή</button>
                     <p class="form-success" id="form-success" hidden data-en="Thank you! We'll be in touch soon.">Σας ευχαριστούμε! Θα επικοινωνήσουμε σύντομα.</p>
+                    <p class="form-error" id="form-error" hidden data-en="Something went wrong — please email us directly at info@zaxaroplasteioroyal.gr.">Κάτι πήγε στραβά — παρακαλούμε στείλτε μας email απευθείας στο info@zaxaroplasteioroyal.gr.</p>
                 </form>
             </div>
         </section>
@@ -120,20 +135,26 @@
     <footer class="footer">
         <div class="footer-top">
             <div class="footer-logo">
-                <img src="images/logo_cream_trans.png" alt="Royal Logo" height="60">
+                <img src="images/logo_cream_trans.png" alt="Royal Logo" height="60" loading="lazy">
                 <p class="footer-tagline" data-en="The fine art of pâtisserie">Υψηλή τέχνη ζαχαροπλαστικής</p>
             </div>
             <div class="footer-social">
-                <a href="#" class="social-link" aria-label="Instagram">
+                <a href="https://www.instagram.com/zaxaroplasteio_royal/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                         <rect x="2" y="2" width="20" height="20" rx="5"/>
                         <circle cx="12" cy="12" r="4"/>
                         <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
                     </svg>
                 </a>
-                <a href="#" class="social-link" aria-label="Facebook">
+                <a href="https://www.facebook.com/zaxaroplasteio.royal/" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                         <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+                <a href="https://share.google/yxiHzfwpHjZptldyn" class="social-link" aria-label="Google Maps" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                        <circle cx="12" cy="10" r="3"/>
                     </svg>
                 </a>
             </div>
