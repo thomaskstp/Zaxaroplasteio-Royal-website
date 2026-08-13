@@ -1319,6 +1319,16 @@ a {
         padding: 12px 16px;
     }
 
+    /* Tapping a link in the open dropdown should turn it orange right
+       away, not only once :hover kicks in after a long press. Scoped
+       to this mobile breakpoint only, so desktop keeps its existing
+       hover-only look untouched. */
+    .nav-left a:active,
+    .nav-right a:active {
+        background-color: var(--orange-warm);
+        color: var(--chocolate);
+    }
+
     .nav-vdivider {
         display: none;
     }
